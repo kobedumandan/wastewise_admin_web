@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);                 
+                             
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   
+    transition: background-color 0.3s ease;       
+}
+
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #f4f4f4;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#search-form {
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+#search-form.d-none {
+    display: none !important;
+}
+
+#search-form.d-block {
+    display: block !important;
+}
+.search-form {
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-width 0.4s ease, opacity 0.4s ease;
+    display: inline-block;
+}
+
+.search-form.active {
+    max-width: 200px;
+    opacity: 1;
+}
+
+.custom-hover {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: inherit;
+}
+
+.custom-hover:hover {
+    background-color: #b30000 !important;
+    color: white !important;
+}
+.custom-hoverr {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: inherit;
+}
+
+.custom-hoverr:hover {
+    background-color: #2925e2 !important;
+    color: white !important;
+}
+
+.modal-lg {
+    max-width: 60%; 
+    margin-top: 100px;
+}
+
+
+/* Glassmorphism effect for modal content */
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px; 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.form-control {
+    background: rgba(255, 255, 255, 0.15); 
+    color: #fff; 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px; 
+    padding: 10px; 
+    transition: all 0.3s ease; 
+}
+
+
+.form-control:focus {
+    border-color: #4CAF50; 
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.input-group-text {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+
+.custom-hover {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-hover:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.custom-hover-savechanges {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.custom-hover-savechanges:hover {
+    background-color: #4b46eb;
+    color: #fff; 
+    transform: scale(1.05);
+}
+
+/* Modal header */
+.modal-header {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* Modal footer */
+.modal-footer {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.pagination .page-item .page-link {
+    background-color: #ffffff; /* Green background */
+    border-color: #ffffff; /* Green border */
+    color: black; /* White text */
+}
+.pagination .page-item.active .page-link {
+    background-color: #61d09e; /* Darker green for active page */
+    border-color: #61d09e;
+}
+.pagination .page-item:hover .page-link {
+    background-color: #3dae7b; /* Slightly darker green on hover */
+    border-color: #3dae7b;
+}
+.dropdown-menu {
+  z-index: 1050 !important;
+  /* For testing only. Remove later */
+}
+

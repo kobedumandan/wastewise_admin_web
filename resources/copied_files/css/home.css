@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-item:hover {
+    color: white !important;
+}
+
+
+
+
+.glassmorphism {
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+padding: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.box-area {
+background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+backdrop-filter: blur(10px); /* Blur effect */
+-webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+border-radius: 15px; /* Rounded corners */
+border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+.header-text h1 {
+font-size: 2.5rem;
+color: #fff;
+}
+.form-control {
+background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+border: none;
+color: #333;
+}
+
+.form-control:focus {
+background: rgba(255, 255, 255, 0.8); /* Brighter on focus */
+box-shadow: 0 0 8px rgba(255, 255, 255, 0.4); /* Light glow */
+}
+
+/* Button hover effect */
+.btn-warning:hover {
+background-color: #e0a800;
+color: #fff;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transform: scale(1.05);
+transition: all 0.3s ease;
+}
+
+/* Adjust container for full-page effect */
+.glass {
+margin-top: 1 00px;
+width: 900px;
+justify-content: center;
+align-items: center;
+background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0)
+);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+border: 1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.irs img {
+border-radius: 20px;
+}
+
+.laroens {
+width: 100px;
+margin-left: 150px;
+}
+.span {
+color: #13BE37;
+}
+.form-control {
+background-color: aliceblue;
+}
+.ttn {
+background-color: aliceblue;
+}
+.ttn:hover {
+background-color: #13BE37;
+}
+
+
+.navbar-brand,
+.nav-link {
+    color: #ffffff; 
+    font-weight: 500;
+}
+
+
+body {
+    padding-top: 90px; 
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    min-height: 100vh;
+}
+
+/* Ensure dropdown items are visible and white on hover */
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8); /* dark semi-transparent background */
+    border: none;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* light hover effect */
+    color: white;
+}
+
+.bottom-left-wrapper {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 10;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slogan-text {
+    
+    margin-left: 280px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.square-btn {
+    background-color: #28a745;
+    margin-bottom: 150px;
+    margin-left: 280px;
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}

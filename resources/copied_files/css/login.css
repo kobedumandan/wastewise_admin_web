@@ -1,0 +1,118 @@
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+.glassmorphism {
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+padding: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.box-area {
+background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+backdrop-filter: blur(10px); /* Blur effect */
+-webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+border-radius: 15px; /* Rounded corners */
+border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+.header-text h1 {
+font-size: 2.5rem;
+color: #fff;
+}
+.form-control {
+background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+border: none;
+color: #333;
+}
+
+.form-control:focus {
+background: rgba(255, 255, 255, 0.8); /* Brighter on focus */
+box-shadow: 0 0 8px rgba(255, 255, 255, 0.4); /* Light glow */
+}
+
+/* Button hover effect */
+.btn-warning:hover {
+background-color: #e0a800;
+color: #fff;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transform: scale(1.05);
+transition: all 0.3s ease;
+}
+
+/* Adjust container for full-page effect */
+.glass {
+margin-top: 1 00px;
+width: 900px;
+justify-content: center;
+align-items: center;
+background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0)
+);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+border: 1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.irs img {
+border-radius: 20px;
+}
+
+.laroens {
+width: 100px;
+margin-left: 150px;
+}
+.span {
+color: #13BE37;
+}
+.form-control {
+background-color: aliceblue;
+}
+.ttn {
+background-color: aliceblue;
+}
+.ttn:hover {
+background-color: #13BE37;
+}
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    z-index: 999; /* Make sure it stays on top */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #ffffff; 
+    font-weight: 500;
+}
+
+
+body {
+    padding-top: 90px; 
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    min-height: 100vh;
+}
